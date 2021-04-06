@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+}
+
+body{
+background-color: #0f0e17;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid #dddada;
+}
+.navbar h1 {
+  color:#fffffe;
+  font-size: 3em;
+}
+.navbar .links {
+  margin-left: auto;  
+}
+
+.navbar .links a:last-child{
+  color: #0f0e17;
+  background-color: #ff8906;
+  font-weight: bold;
+  padding: 0.5rem 1rem ;
+  transition: all 0.2s linear;
+  border-radius:0.4em;
+}
+
+.navbar .links a:last-child:hover {
+  color: #ff8906;
+  background-color: #0f0e17;
+  font-weight: bold;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  padding: 6px;
+  color: #a7a9be;
+}
+.navbar a:hover {
+  color:#ff8906;
+}
+
+
+.content { 
+  display: flex; 
+  justify-content: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.nextClassDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+
+
+.next-class {
+  min-width: 600px;
+  padding: 1.2em;
+  border-radius: 5px;
+  border: 5px solid #252335;
+  transition: all .5s ease;
+}
+
+.next-class:hover{
+  border: 5px solid #ff8906;
+}
+
+.next-class h2 {
+  font-size: 1.2em;
+  color: #fffffe;
+  margin-bottom: 10px;
+  transition: all .5s ease;
+}
+
+.next-class h2:hover{
+  color: #ff8906;
+}
+
+.next-class h4 {
+  font-size: 1em;
+  color: #b4b4af;
+  margin-bottom: 8px;
+}
+
+.next-class p{
+  color: #a7a9be;
+}
+
+.next-class p span,a {
+  color: #ff8906;
+}
+
+.noAuth{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-top: 10rem;
+  display: none;
+}
+.noAuth  h1 {
+  color:#fffffe;
+  font-size: 5rem;
+}
+
+.noAuth h1::before { 
+  display: block;
+  position: absolute;
+  top: 6rem;
+  width: 60px;
+  height: 60px;
+  content:"//";
+  margin-right: 10px;
+  color: #fa8b0b;
+}
+
+.noAuth h1::after { 
+  display: block;
+  position: absolute;
+  top: 11rem;
+  width: 60px;
+  height: 60px;
+  content:"________";
+  margin-right: 10px;
+  color: #fa8b0b;
+}
+
+.noAuth  h2 {
+  color:#fffffe;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
